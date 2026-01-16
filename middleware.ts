@@ -1,16 +1,34 @@
-import createMiddleware from 'next-intl/middleware';
-import { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-const intlMiddleware = createMiddleware({
-  locales: ['en', 'id'],
-  defaultLocale: 'en',
-  localePrefix: 'as-needed'
-});
+const locales = ['en', 'id'];
+const defaultLocale = 'en';
 
-export default function middleware(request: NextRequest) {
-  return intlMiddleware(request);
+export function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+  
+  // Check if the pathname already has a locale
+  const pathnameHasLocale = locales.some(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  );
+  
+  if (pathnameHasLocale) return NextResponse.next();
+  
+  // Skip static files and API routes
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/api') ||
+    pathname.includes('.') // files with extensions
+  ) {
+    return NextResponse.next();
+  }
+  
+  // Redirect to default locale
+  const url = request.nextUrl.clone();
+  url.pathname = `/${defaultLocale}${pathname}`;
+  return NextResponse.redirect(url);
 }
 
 export const config = {
-  matcher: ['/', '/(en|id)/:path*']
+  matcher: ['/((?!_next|api|.*\\..*).*)'],
 };

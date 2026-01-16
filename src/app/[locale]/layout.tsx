@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
 import "../globals.css";
+
+// Static imports for messages
+import enMessages from '../../../messages/en.json';
+import idMessages from '../../../messages/id.json';
+
+const messages: Record<string, typeof enMessages> = {
+  en: enMessages,
+  id: idMessages,
+};
+
+const locales = ['en', 'id'] as const;
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -21,7 +30,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
+  return locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({
@@ -30,8 +39,8 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const messages = await getMessages({ locale });
-  const metadata = messages.metadata as { title: string; description: string };
+  const localeMessages = messages[locale] || messages['en'];
+  const metadata = localeMessages.metadata;
   
   return {
     title: {
@@ -93,19 +102,18 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   
-  if (!routing.locales.includes(locale as 'en' | 'id')) {
+  if (!locales.includes(locale as 'en' | 'id')) {
     notFound();
   }
 
-  setRequestLocale(locale);
-  const messages = await getMessages();
+  const localeMessages = messages[locale] || messages['en'];
 
   return (
     <html lang={locale} className="scroll-smooth overflow-x-hidden">
       <body
         className={`${cormorant.variable} ${plusJakarta.variable} antialiased min-h-screen w-full overflow-x-hidden`}
       >
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={localeMessages} locale={locale}>
           {children}
         </NextIntlClientProvider>
       </body>
