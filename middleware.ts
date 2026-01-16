@@ -1,17 +1,16 @@
 import createMiddleware from 'next-intl/middleware';
+import { NextRequest } from 'next/server';
 
-export default createMiddleware({
+const intlMiddleware = createMiddleware({
   locales: ['en', 'id'],
   defaultLocale: 'en',
   localePrefix: 'as-needed'
 });
 
+export default function middleware(request: NextRequest) {
+  return intlMiddleware(request);
+}
+
 export const config = {
-  matcher: [
-    // Match all pathnames except for
-    // - API routes
-    // - _next (Next.js internals)
-    // - Static files (images, etc.)
-    '/((?!api|_next|_vercel|.*\\..*).*)'
-  ]
+  matcher: ['/', '/(en|id)/:path*']
 };
