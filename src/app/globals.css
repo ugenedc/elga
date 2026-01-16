@@ -1,26 +1,486 @@
 @import "tailwindcss";
 
+/* ============================================
+   ELGA - Sacred Modern Design System
+   Temple geometry meets clean minimalism
+   ============================================ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary Colors - Volcanic Earth */
+  --volcanic-black: #1A1A1A;
+  --volcanic-deep: #0D0D0D;
+  --temple-stone: #8B7355;
+  --temple-stone-light: #A69076;
+  
+  /* Accent - Sacred Gold */
+  --sacred-gold: #C9A962;
+  --sacred-gold-light: #D4BC82;
+  --sacred-gold-dark: #A68A4E;
+  
+  /* Nature Colors */
+  --jungle-deep: #2D5A3D;
+  --jungle-light: #3D7A52;
+  --jungle-mist: #4A8F62;
+  
+  /* Ocean Colors */
+  --balinese-sea: #1E4D5C;
+  --balinese-sea-light: #2A6A7D;
+  --balinese-foam: #78B4C4;
+  
+  /* Light Colors */
+  --rice-cream: #F5F0E8;
+  --rice-white: #FDFBF7;
+  --sand-light: #E8E0D5;
+  --sand-medium: #D4C9BA;
+  
+  /* Functional */
+  --background: var(--rice-cream);
+  --foreground: var(--volcanic-black);
+  --muted: var(--sand-light);
+  --muted-foreground: var(--temple-stone);
+  
+  /* Spacing */
+  --section-padding: clamp(4rem, 8vw, 8rem);
+  --container-max: 1400px;
+  
+  /* Animation */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 800ms;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors */
+  --color-volcanic-black: var(--volcanic-black);
+  --color-volcanic-deep: var(--volcanic-deep);
+  --color-temple-stone: var(--temple-stone);
+  --color-temple-stone-light: var(--temple-stone-light);
+  --color-sacred-gold: var(--sacred-gold);
+  --color-sacred-gold-light: var(--sacred-gold-light);
+  --color-sacred-gold-dark: var(--sacred-gold-dark);
+  --color-jungle-deep: var(--jungle-deep);
+  --color-jungle-light: var(--jungle-light);
+  --color-jungle-mist: var(--jungle-mist);
+  --color-balinese-sea: var(--balinese-sea);
+  --color-balinese-sea-light: var(--balinese-sea-light);
+  --color-balinese-foam: var(--balinese-foam);
+  --color-rice-cream: var(--rice-cream);
+  --color-rice-white: var(--rice-white);
+  --color-sand-light: var(--sand-light);
+  --color-sand-medium: var(--sand-medium);
+  
+  /* Typography */
+  --font-heading: var(--font-cormorant);
+  --font-body: var(--font-plus-jakarta);
+  
+  /* Animations */
+  --ease-expo: var(--ease-out-expo);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Base Typography */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--rice-cream);
+  color: var(--volcanic-black);
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* Selection */
+::selection {
+  background: var(--sacred-gold);
+  color: var(--volcanic-black);
+}
+
+/* Focus States */
+:focus-visible {
+  outline: 2px solid var(--sacred-gold);
+  outline-offset: 2px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sand-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--temple-stone);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--temple-stone-light);
+}
+
+/* ============================================
+   Sacred Geometry Patterns
+   ============================================ */
+
+.pattern-temple-gate {
+  background-image: 
+    linear-gradient(to right, var(--sacred-gold) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--sacred-gold) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.pattern-offerings {
+  background-image: radial-gradient(
+    circle at center,
+    var(--sacred-gold) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+}
+
+.pattern-water {
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      var(--balinese-sea-light) 10px,
+      var(--balinese-sea-light) 11px
+    );
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--sacred-gold-light), var(--sacred-gold), var(--sacred-gold-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(
+    180deg,
+    var(--volcanic-deep) 0%,
+    var(--volcanic-black) 50%,
+    var(--jungle-deep) 100%
+  );
+}
+
+.bg-gradient-section {
+  background: linear-gradient(
+    180deg,
+    var(--rice-cream) 0%,
+    var(--rice-white) 100%
+  );
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(
+    180deg,
+    var(--volcanic-black) 0%,
+    var(--volcanic-deep) 100%
+  );
+}
+
+/* Glass Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ============================================
+   Animation Classes
+   ============================================ */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(201, 169, 98, 0.3),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ============================================
+   Container
+   ============================================ */
+
+.container-elga {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1rem, 4vw, 2rem);
+  padding-right: clamp(1rem, 4vw, 2rem);
+}
+
+/* ============================================
+   Section Spacing
+   ============================================ */
+
+.section-padding {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+/* ============================================
+   Button Styles
+   ============================================ */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: var(--sacred-gold);
+  color: var(--volcanic-black);
+  font-family: var(--font-plus-jakarta);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: transform var(--duration-slow) var(--ease-out-expo);
+}
+
+.btn-primary:hover {
+  background: var(--sacred-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(201, 169, 98, 0.3);
+}
+
+.btn-primary:hover::before {
+  transform: translateX(100%);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: var(--sacred-gold);
+  font-family: var(--font-plus-jakarta);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid var(--sacred-gold);
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out-expo);
+}
+
+.btn-secondary:hover {
+  background: var(--sacred-gold);
+  color: var(--volcanic-black);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   Badge Styles
+   ============================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(201, 169, 98, 0.1);
+  color: var(--sacred-gold);
+  font-family: var(--font-plus-jakarta);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid rgba(201, 169, 98, 0.2);
+}
+
+.badge-dark {
+  background: rgba(26, 26, 26, 0.8);
+  border-color: rgba(201, 169, 98, 0.3);
+}
+
+/* ============================================
+   Card Styles
+   ============================================ */
+
+.card {
+  background: var(--rice-white);
+  border: 1px solid var(--sand-light);
+  padding: 2rem;
+  transition: all var(--duration-normal) var(--ease-out-expo);
+}
+
+.card:hover {
+  border-color: var(--sacred-gold);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.card-dark {
+  background: rgba(26, 26, 26, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--rice-cream);
+}
+
+.card-dark:hover {
+  border-color: var(--sacred-gold);
+  background: rgba(26, 26, 26, 0.8);
+}
+
+/* ============================================
+   Form Styles
+   ============================================ */
+
+.input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: var(--rice-white);
+  border: 1px solid var(--sand-medium);
+  color: var(--volcanic-black);
+  font-family: var(--font-plus-jakarta);
+  font-size: 1rem;
+  transition: all var(--duration-fast) ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--sacred-gold);
+  box-shadow: 0 0 0 3px rgba(201, 169, 98, 0.1);
+}
+
+.input::placeholder {
+  color: var(--temple-stone-light);
+}
+
+.input-dark {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--rice-cream);
+}
+
+.input-dark::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ============================================
+   Dividers
+   ============================================ */
+
+.divider-sacred {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--sacred-gold),
+    transparent
+  );
+}
+
+.divider-stone {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--sand-medium),
+    transparent
+  );
 }

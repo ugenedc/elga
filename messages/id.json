@@ -1,0 +1,392 @@
+{
+  "metadata": {
+    "title": "Elga - Memulihkan Keseimbangan Bersama",
+    "description": "Perusahaan pengelolaan sampah milik Bali yang memulihkan keindahan alam Pulau Dewata melalui solusi pengelolaan sampah berkelanjutan dan menyeluruh."
+  },
+  "nav": {
+    "home": "Beranda",
+    "challenge": "Tantangan",
+    "approach": "Pendekatan Kami",
+    "impact": "Dampak Kami",
+    "community": "Komunitas",
+    "business": "Untuk Bisnis",
+    "getInvolved": "Bergabung"
+  },
+  "home": {
+    "hero": {
+      "title": "Memulihkan Keseimbangan Bersama",
+      "subtitle": "Perusahaan pengelolaan sampah milik Bali, diperkuat oleh aliansi Australia, yang berdedikasi untuk memulihkan keharmonisan lingkungan Bali secara permanen.",
+      "cta": "Bergabung Sekarang",
+      "scrollHint": "Temukan Visi Kami"
+    },
+    "vision": {
+      "badge": "Visi Kami",
+      "title": "Bali yang Keseimbangannya Dipulihkan",
+      "description": "Kami membayangkan Bali di mana sampah tidak lagi mencemari tanah, sungai, atau lautan — di mana keseimbangan lingkungan dipulihkan dan dilindungi untuk generasi mendatang.",
+      "philosophy": {
+        "title": "Berakar pada Tri Hita Karana",
+        "description": "Filosofi Bali tentang keharmonisan antara manusia, alam, dan alam spiritual memandu segala yang kami lakukan.",
+        "parahyangan": {
+          "title": "Parahyangan",
+          "description": "Keharmonisan dengan spiritual"
+        },
+        "pawongan": {
+          "title": "Pawongan",
+          "description": "Keharmonisan antar manusia"
+        },
+        "palemahan": {
+          "title": "Palemahan",
+          "description": "Keharmonisan dengan alam"
+        }
+      }
+    },
+    "partnership": {
+      "badge": "Aliansi Strategis",
+      "title": "Kepemimpinan Bali, Standar Global",
+      "description": "Ini bukan solusi asing yang dipaksakan pada Bali. Ini adalah solusi Bali — diperkuat oleh mitra Australia yang terpercaya.",
+      "balinese": {
+        "title": "Kepemilikan Bali",
+        "points": [
+          "Keselarasan budaya dan legitimasi",
+          "Keterlibatan dan kepercayaan komunitas",
+          "Otoritas pengambilan keputusan lokal",
+          "Keuntungan dan dampak tetap di pulau"
+        ]
+      },
+      "australian": {
+        "title": "Aliansi Australia",
+        "points": [
+          "Sistem operasional dan tata kelola",
+          "Keahlian teknik lingkungan",
+          "Disiplin modal dan pemikiran jangka panjang",
+          "Pelaporan ESG dan pengukuran dampak"
+        ]
+      }
+    },
+    "impact": {
+      "badge": "Dampak Kami",
+      "title": "Pemulihan yang Terukur",
+      "stats": {
+        "diverted": {
+          "value": "50.000",
+          "unit": "ton",
+          "label": "Sampah Dialihkan dari TPA"
+        },
+        "plastic": {
+          "value": "2.500",
+          "unit": "ton",
+          "label": "Plastik Dicegah dari Sungai"
+        },
+        "organic": {
+          "value": "15.000",
+          "unit": "ton",
+          "label": "Sampah Organik Dikembalikan ke Tanah"
+        },
+        "jobs": {
+          "value": "500+",
+          "unit": "",
+          "label": "Lapangan Kerja Lokal Tercipta"
+        }
+      }
+    },
+    "cta": {
+      "title": "Jadilah Bagian dari Pemulihan Bali",
+      "description": "Baik Anda rumah tangga, desa, bisnis, atau organisasi — ada tempat untuk Anda dalam gerakan ini.",
+      "primary": "Bergabung",
+      "secondary": "Pelajari Lebih Lanjut"
+    }
+  },
+  "challenge": {
+    "hero": {
+      "title": "Tantangan yang Kita Hadapi",
+      "subtitle": "Krisis sampah Bali mengancam lingkungan, budaya, dan masa depan pulau ini. Memahami masalah adalah langkah pertama menuju penyelesaian."
+    },
+    "crisis": {
+      "badge": "Realita",
+      "title": "Tantangan yang Tumbuh dan Kompleks",
+      "description": "Per 2026, Bali menghasilkan sekitar 1,6–1,8 juta ton sampah setiap tahun.",
+      "drivers": {
+        "population": {
+          "title": "4,5 Juta+",
+          "description": "Populasi tetap melebihi tingkat pra-pandemi"
+        },
+        "tourism": {
+          "title": "Pariwisata Rekor",
+          "description": "Jumlah pengunjung melampaui semua tahun sebelumnya"
+        },
+        "consumption": {
+          "title": "Konsumsi Meningkat",
+          "description": "Ketergantungan pada barang kemasan dan impor"
+        },
+        "responsibility": {
+          "title": "Akuntabilitas Terbatas",
+          "description": "Tidak ada tanggung jawab produsen untuk material sampah"
+        }
+      }
+    },
+    "infrastructure": {
+      "badge": "Keterbatasan Sistemik",
+      "title": "Kesenjangan Infrastruktur",
+      "description": "Meskipun ada niat kebijakan dan kesadaran yang tumbuh, infrastruktur sampah di Bali tetap terfragmentasi.",
+      "issues": [
+        "Cakupan pengumpulan tidak konsisten di daerah pedesaan",
+        "Pemilahan di sumber tidak merata dan jarang ditegakkan",
+        "Kapasitas daur ulang ada tetapi kurang koordinasi",
+        "TPA seperti TPA Suwung kelebihan kapasitas"
+      ]
+    },
+    "consequences": {
+      "badge": "Dampaknya",
+      "title": "Konsekuensi Lingkungan dan Budaya",
+      "description": "Dampak pengelolaan sampah yang tidak memadai terlihat dan sangat terasa.",
+      "points": [
+        {
+          "title": "Sungai dan Lautan",
+          "description": "Plastik mengalir langsung ke laut saat musim hujan"
+        },
+        {
+          "title": "Kehidupan Laut",
+          "description": "Terumbu karang dan ekosistem laut rusak oleh sampah"
+        },
+        {
+          "title": "Tempat Suci",
+          "description": "Lingkungan pura dan aliran air upacara terdegradasi"
+        },
+        {
+          "title": "Kesehatan Masyarakat",
+          "description": "Pembakaran terbuka melepaskan racun ke lingkungan"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Krisis Ini Menuntut Tindakan",
+      "description": "Kesenjangan antara visi kebijakan dan pelaksanaan di lapangan adalah tempat di mana perubahan transformasional diperlukan.",
+      "button": "Lihat Pendekatan Kami"
+    }
+  },
+  "approach": {
+    "hero": {
+      "title": "Pendekatan Kami",
+      "subtitle": "Akuntabilitas menyeluruh dari rumah tangga hingga hasil akhir. Tidak ada yang menghilang ke 'tempat lain'."
+    },
+    "difference": {
+      "badge": "Apa yang Membedakan Kami",
+      "title": "Benar-benar Mengubah Permainan",
+      "points": [
+        {
+          "title": "Milik Bali, Untuk Bali",
+          "description": "Otoritas pengambilan keputusan, keterlibatan komunitas, dan visi jangka panjang berada di tangan kepemimpinan Bali."
+        },
+        {
+          "title": "Akuntabilitas Menyeluruh",
+          "description": "Kami mengelola seluruh perjalanan sampah: pengumpulan, pemilahan, pemrosesan, pemulihan, pembuangan, dan pelaporan."
+        },
+        {
+          "title": "Pemulihan, Bukan Hanya Pengelolaan",
+          "description": "Tujuan kami adalah perbaikan lingkungan — sungai lebih bersih, ketergantungan TPA berkurang, pengurangan plastik permanen."
+        }
+      ]
+    },
+    "collection": {
+      "badge": "Langkah 1",
+      "title": "Pengumpulan: Andal, Hormat, Lokal",
+      "description": "Pengumpulan sampah yang dirancang sesuai realitas Bali.",
+      "features": [
+        "Layanan terjadwal dan andal",
+        "Aliran terpisah untuk organik, daur ulang, dan residu",
+        "Rute fleksibel sesuai upacara dan festival",
+        "Tim pengumpul yang dipekerjakan secara lokal"
+      ]
+    },
+    "processing": {
+      "badge": "Langkah 2",
+      "title": "Pemrosesan: Terdesentralisasi, Tangguh",
+      "description": "Hub pemrosesan regional sebagai pengganti fasilitas pusat tunggal.",
+      "features": [
+        "Fasilitas pemilahan dan pemulihan",
+        "Pengomposan dan bio-pemrosesan sampah organik",
+        "Pengepakan plastik dan persiapan material",
+        "Penanganan sampah residu yang aman"
+      ]
+    },
+    "circular": {
+      "badge": "Langkah 3",
+      "title": "Ekonomi Sirkular dalam Praktik",
+      "description": "Material yang dipulihkan dikembalikan ke penggunaan produktif.",
+      "outcomes": [
+        {
+          "title": "Kompos",
+          "description": "Mendukung pertanian dan lanskap Bali"
+        },
+        {
+          "title": "Plastik",
+          "description": "Dijual ke pasar daur ulang terverifikasi"
+        },
+        {
+          "title": "Data",
+          "description": "Dibagikan untuk menginformasikan pengurangan kemasan"
+        }
+      ]
+    }
+  },
+  "impact": {
+    "hero": {
+      "title": "Dampak Kami",
+      "subtitle": "Diukur, diverifikasi, dan dilaporkan secara transparan. Kepercayaan diperoleh melalui data dan konsistensi."
+    },
+    "metrics": {
+      "badge": "Apa yang Kami Ukur",
+      "title": "Angka Nyata, Perubahan Nyata",
+      "description": "Setiap ton yang dialihkan, setiap plastik yang dipulihkan, setiap pekerjaan yang diciptakan — kami lacak semuanya."
+    },
+    "stories": {
+      "badge": "Kisah Sukses",
+      "title": "Transformasi dalam Aksi"
+    },
+    "transparency": {
+      "badge": "Komitmen Kami",
+      "title": "Transparansi sebagai Nilai Inti",
+      "points": [
+        "Pelaporan publik semua metrik",
+        "Verifikasi pihak ketiga",
+        "Komunikasi jujur tentang tantangan",
+        "Perbaikan berkelanjutan"
+      ]
+    }
+  },
+  "community": {
+    "hero": {
+      "title": "Komunitas",
+      "subtitle": "Komunitas adalah mitra, bukan pelanggan. Kami bekerja melalui struktur Banjar dan Desa untuk merancang bersama sistem sampah yang sesuai dengan kehidupan lokal."
+    },
+    "banjar": {
+      "badge": "Kemitraan Lokal",
+      "title": "Bekerja Melalui Banjar dan Desa",
+      "description": "Kami berkolaborasi dengan pemimpin Banjar, dewan desa (desa adat), dan koperasi lokal untuk merancang bersama sistem sampah yang sesuai dengan kehidupan lokal, bukan mengganggu."
+    },
+    "education": {
+      "badge": "Pendidikan",
+      "title": "Pendidikan sebagai Infrastruktur Inti",
+      "description": "Perubahan perilaku diperlakukan sebagai infrastruktur penting, bukan renungan.",
+      "programs": [
+        {
+          "title": "Pelatihan Rumah Tangga",
+          "description": "Pelatihan pemilahan untuk keluarga"
+        },
+        {
+          "title": "Program Sekolah",
+          "description": "Menghubungkan sampah, budaya, dan lingkungan"
+        },
+        {
+          "title": "Pesan Upacara",
+          "description": "Selaras dengan ritme budaya"
+        },
+        {
+          "title": "Pelaporan Dampak",
+          "description": "Hasil visual tingkat desa"
+        }
+      ]
+    },
+    "jobs": {
+      "badge": "Pekerjaan",
+      "title": "Pekerjaan Lokal, Kebanggaan Lokal",
+      "description": "Setiap peran dalam operasi kami — dari pengumpulan hingga pemrosesan hingga manajemen — diisi oleh orang Bali."
+    }
+  },
+  "business": {
+    "hero": {
+      "title": "Untuk Bisnis",
+      "subtitle": "Pariwisata bergantung pada lingkungan Bali. Kami membantu hotel, resor, dan operator perhotelan mencapai tujuan keberlanjutan mereka."
+    },
+    "services": {
+      "badge": "Layanan Kami",
+      "title": "Solusi Sampah Komprehensif",
+      "items": [
+        {
+          "title": "Pengalihan Sampah Terverifikasi",
+          "description": "Pelaporan detail sampah yang dialihkan dari TPA"
+        },
+        {
+          "title": "Data Siap ESG",
+          "description": "Laporan diformat untuk standar keberlanjutan internasional"
+        },
+        {
+          "title": "Cerita untuk Tamu",
+          "description": "Narasi keberlanjutan yang menarik untuk tamu Anda"
+        },
+        {
+          "title": "Pelatihan Staf",
+          "description": "Pelatihan komprehensif dan dukungan kepatuhan"
+        }
+      ]
+    },
+    "partnerships": {
+      "badge": "Kolaborasi",
+      "title": "Kemitraan, Bukan Hanya Layanan",
+      "description": "Kami bekerja bersama tim Anda untuk mengintegrasikan pengelolaan sampah ke dalam strategi keberlanjutan Anda."
+    },
+    "cta": {
+      "title": "Jadikan Keberlanjutan Keunggulan Anda",
+      "button": "Hubungi Kami"
+    }
+  },
+  "getInvolved": {
+    "hero": {
+      "title": "Bergabung",
+      "subtitle": "Pemulihan Bali membutuhkan kita semua. Temukan tempat Anda dalam gerakan ini."
+    },
+    "pathways": {
+      "badge": "Jalan Anda",
+      "title": "Bagaimana Anda Dapat Berkontribusi",
+      "options": [
+        {
+          "title": "Rumah Tangga",
+          "description": "Mulai memilah sampah di rumah dan bergabung dengan program Banjar Anda.",
+          "cta": "Pelajari Lebih Lanjut"
+        },
+        {
+          "title": "Desa",
+          "description": "Bermitra dengan kami untuk membawa layanan sampah komprehensif ke komunitas Anda.",
+          "cta": "Bermitra dengan Kami"
+        },
+        {
+          "title": "Bisnis",
+          "description": "Integrasikan pengelolaan sampah berkelanjutan ke dalam operasi Anda.",
+          "cta": "Solusi Bisnis"
+        },
+        {
+          "title": "Pendukung",
+          "description": "Dukung misi melalui advokasi, pendanaan, atau kolaborasi.",
+          "cta": "Hubungi Kami"
+        }
+      ]
+    },
+    "newsletter": {
+      "title": "Tetap Terupdate",
+      "description": "Terima pembaruan tentang kemajuan kami, kisah dampak, dan kesempatan untuk berkontribusi.",
+      "placeholder": "Alamat email Anda",
+      "button": "Berlangganan"
+    },
+    "contact": {
+      "title": "Hubungi Kami",
+      "description": "Punya pertanyaan atau ingin mendiskusikan kemitraan? Kami ingin mendengar dari Anda.",
+      "form": {
+        "name": "Nama Anda",
+        "email": "Alamat Email",
+        "message": "Pesan Anda",
+        "submit": "Kirim Pesan"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Memulihkan keseimbangan Bali, bersama.",
+    "navigation": "Navigasi",
+    "contact": "Kontak",
+    "email": "hello@elga.id",
+    "legal": "Legal",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat Layanan",
+    "copyright": "© 2026 Elga. Hak cipta dilindungi.",
+    "madeWith": "Dibuat dengan cinta untuk Bali"
+  }
+}

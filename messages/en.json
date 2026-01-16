@@ -1,0 +1,392 @@
+{
+  "metadata": {
+    "title": "Elga - Restoring Balance Together",
+    "description": "A Balinese-owned waste management company restoring Bali's natural beauty through sustainable, end-to-end waste solutions."
+  },
+  "nav": {
+    "home": "Home",
+    "challenge": "The Challenge",
+    "approach": "Our Approach",
+    "impact": "Our Impact",
+    "community": "Community",
+    "business": "For Business",
+    "getInvolved": "Get Involved"
+  },
+  "home": {
+    "hero": {
+      "title": "Restoring Balance Together",
+      "subtitle": "A Balinese-owned waste management company, strengthened by an Australian alliance, dedicated to permanently restoring Bali's environmental harmony.",
+      "cta": "Join the Movement",
+      "scrollHint": "Discover Our Vision"
+    },
+    "vision": {
+      "badge": "Our Vision",
+      "title": "A Bali Where Balance is Restored",
+      "description": "We envision a Bali where waste no longer pollutes land, rivers, or oceans — where environmental balance is restored and protected for generations.",
+      "philosophy": {
+        "title": "Rooted in Tri Hita Karana",
+        "description": "The Balinese philosophy of harmony between humans, nature, and the spiritual realm guides everything we do.",
+        "parahyangan": {
+          "title": "Parahyangan",
+          "description": "Harmony with the spiritual"
+        },
+        "pawongan": {
+          "title": "Pawongan",
+          "description": "Harmony among people"
+        },
+        "palemahan": {
+          "title": "Palemahan",
+          "description": "Harmony with nature"
+        }
+      }
+    },
+    "partnership": {
+      "badge": "Strategic Alliance",
+      "title": "Balinese Leadership, Global Standards",
+      "description": "This is not a foreign solution imposed on Bali. It is a Balinese solution — strengthened by trusted Australian partners.",
+      "balinese": {
+        "title": "Balinese Ownership",
+        "points": [
+          "Cultural alignment and legitimacy",
+          "Community engagement and trust",
+          "Local decision-making authority",
+          "Profits and impact stay on the island"
+        ]
+      },
+      "australian": {
+        "title": "Australian Alliance",
+        "points": [
+          "Operational systems and governance",
+          "Environmental engineering expertise",
+          "Capital discipline and long-term thinking",
+          "ESG reporting and impact measurement"
+        ]
+      }
+    },
+    "impact": {
+      "badge": "Our Impact",
+      "title": "Measurable Restoration",
+      "stats": {
+        "diverted": {
+          "value": "50,000",
+          "unit": "tonnes",
+          "label": "Waste Diverted from Landfill"
+        },
+        "plastic": {
+          "value": "2,500",
+          "unit": "tonnes",
+          "label": "Plastic Prevented from Waterways"
+        },
+        "organic": {
+          "value": "15,000",
+          "unit": "tonnes",
+          "label": "Organic Waste Returned to Soil"
+        },
+        "jobs": {
+          "value": "500+",
+          "unit": "",
+          "label": "Local Jobs Created"
+        }
+      }
+    },
+    "cta": {
+      "title": "Be Part of Bali's Restoration",
+      "description": "Whether you're a household, village, business, or organization — there's a place for you in this movement.",
+      "primary": "Get Involved",
+      "secondary": "Learn More"
+    }
+  },
+  "challenge": {
+    "hero": {
+      "title": "The Challenge We Face",
+      "subtitle": "Bali's waste crisis threatens the island's environment, culture, and future. Understanding the problem is the first step toward solving it."
+    },
+    "crisis": {
+      "badge": "The Reality",
+      "title": "A Growing and Complex Challenge",
+      "description": "As of 2026, Bali generates an estimated 1.6–1.8 million tonnes of waste annually.",
+      "drivers": {
+        "population": {
+          "title": "4.5 Million+",
+          "description": "Permanent population exceeding pre-pandemic levels"
+        },
+        "tourism": {
+          "title": "Record Tourism",
+          "description": "Visitor numbers surpassing all previous years"
+        },
+        "consumption": {
+          "title": "Rising Consumption",
+          "description": "Increased reliance on packaged and imported goods"
+        },
+        "responsibility": {
+          "title": "Limited Accountability",
+          "description": "No producer responsibility for waste materials"
+        }
+      }
+    },
+    "infrastructure": {
+      "badge": "Systemic Limitations",
+      "title": "Infrastructure Gaps",
+      "description": "Despite policy intent and growing awareness, waste infrastructure in Bali remains fragmented.",
+      "issues": [
+        "Collection coverage inconsistent across rural areas",
+        "Sorting at source uneven and poorly enforced",
+        "Recycling capacity exists but lacks coordination",
+        "Landfills like TPA Suwung over capacity"
+      ]
+    },
+    "consequences": {
+      "badge": "The Impact",
+      "title": "Environmental and Cultural Consequences",
+      "description": "The impacts of inadequate waste management are visible and deeply felt.",
+      "points": [
+        {
+          "title": "Rivers and Oceans",
+          "description": "Plastic flows directly into the ocean during monsoon seasons"
+        },
+        {
+          "title": "Marine Life",
+          "description": "Coral reefs and marine ecosystems damaged by debris"
+        },
+        {
+          "title": "Sacred Spaces",
+          "description": "Temple surrounds and ceremonial waterways degraded"
+        },
+        {
+          "title": "Community Health",
+          "description": "Open burning releases toxins into neighborhoods"
+        }
+      ]
+    },
+    "cta": {
+      "title": "This Crisis Demands Action",
+      "description": "The gap between policy vision and on-the-ground execution is where transformational change is required.",
+      "button": "See Our Approach"
+    }
+  },
+  "approach": {
+    "hero": {
+      "title": "Our Approach",
+      "subtitle": "End-to-end accountability from household to final outcome. Nothing disappears into 'somewhere else'."
+    },
+    "difference": {
+      "badge": "What Makes Us Different",
+      "title": "Truly Game-Changing",
+      "points": [
+        {
+          "title": "Balinese-Owned, Bali-First",
+          "description": "Decision-making authority, community engagement, and long-term vision sit with Balinese leadership."
+        },
+        {
+          "title": "End-to-End Accountability",
+          "description": "We own the entire waste journey: collection, sorting, processing, recovery, disposal, and reporting."
+        },
+        {
+          "title": "Restoration, Not Just Management",
+          "description": "Our goal is environmental repair — cleaner rivers, reduced landfill dependency, permanent plastic reduction."
+        }
+      ]
+    },
+    "collection": {
+      "badge": "Step 1",
+      "title": "Collection: Reliable, Respectful, Local",
+      "description": "Waste collection designed around Bali's realities.",
+      "features": [
+        "Scheduled, reliable services",
+        "Separate streams for organic, recyclable, and residual waste",
+        "Flexible routing aligned with ceremonies and festivals",
+        "Locally employed collection teams"
+      ]
+    },
+    "processing": {
+      "badge": "Step 2",
+      "title": "Processing: Decentralised, Resilient",
+      "description": "Regional processing hubs instead of a single central facility.",
+      "features": [
+        "Sorting and recovery facilities",
+        "Organic waste composting and bio-processing",
+        "Plastic baling and material preparation",
+        "Safe residual waste handling"
+      ]
+    },
+    "circular": {
+      "badge": "Step 3",
+      "title": "Circular Economy in Practice",
+      "description": "Recovered materials returned to productive use.",
+      "outcomes": [
+        {
+          "title": "Compost",
+          "description": "Supports Balinese agriculture and landscaping"
+        },
+        {
+          "title": "Plastics",
+          "description": "Sold into verified recycling markets"
+        },
+        {
+          "title": "Data",
+          "description": "Shared to inform packaging reduction upstream"
+        }
+      ]
+    }
+  },
+  "impact": {
+    "hero": {
+      "title": "Our Impact",
+      "subtitle": "Measured, verified, and transparently reported. Trust is earned through data and consistency."
+    },
+    "metrics": {
+      "badge": "What We Measure",
+      "title": "Real Numbers, Real Change",
+      "description": "Every tonne diverted, every plastic item recovered, every job created — we track it all."
+    },
+    "stories": {
+      "badge": "Success Stories",
+      "title": "Transformation in Action"
+    },
+    "transparency": {
+      "badge": "Our Commitment",
+      "title": "Transparency as a Core Value",
+      "points": [
+        "Public reporting of all metrics",
+        "Third-party verification",
+        "Honest communication of challenges",
+        "Continuous improvement"
+      ]
+    }
+  },
+  "community": {
+    "hero": {
+      "title": "Community",
+      "subtitle": "Communities are partners, not customers. We work through Banjar and Desa structures to co-design waste systems that fit local life."
+    },
+    "banjar": {
+      "badge": "Local Partnerships",
+      "title": "Working Through Banjar and Desa",
+      "description": "We collaborate with Banjar leaders, village councils (desa adat), and local cooperatives to co-design waste systems that fit local life, not disrupt it."
+    },
+    "education": {
+      "badge": "Education",
+      "title": "Education as Core Infrastructure",
+      "description": "Behaviour change is treated as essential infrastructure, not an afterthought.",
+      "programs": [
+        {
+          "title": "Household Training",
+          "description": "Separation training for families"
+        },
+        {
+          "title": "School Programs",
+          "description": "Linking waste, culture, and environment"
+        },
+        {
+          "title": "Ceremonial Messaging",
+          "description": "Aligned with cultural rhythms"
+        },
+        {
+          "title": "Impact Reporting",
+          "description": "Visual village-level results"
+        }
+      ]
+    },
+    "jobs": {
+      "badge": "Employment",
+      "title": "Local Jobs, Local Pride",
+      "description": "Every role in our operation — from collection to processing to management — is filled by Balinese people."
+    }
+  },
+  "business": {
+    "hero": {
+      "title": "For Business",
+      "subtitle": "Tourism depends on Bali's environment. We help hotels, resorts, and hospitality operators meet their sustainability goals."
+    },
+    "services": {
+      "badge": "Our Services",
+      "title": "Comprehensive Waste Solutions",
+      "items": [
+        {
+          "title": "Verified Waste Diversion",
+          "description": "Detailed reporting of waste diverted from landfill"
+        },
+        {
+          "title": "ESG-Ready Data",
+          "description": "Reports formatted for international sustainability standards"
+        },
+        {
+          "title": "Guest-Facing Stories",
+          "description": "Compelling sustainability narratives for your guests"
+        },
+        {
+          "title": "Staff Training",
+          "description": "Comprehensive training and compliance support"
+        }
+      ]
+    },
+    "partnerships": {
+      "badge": "Collaboration",
+      "title": "Partnership, Not Just Service",
+      "description": "We work alongside your team to integrate waste management into your sustainability strategy."
+    },
+    "cta": {
+      "title": "Make Sustainability Your Advantage",
+      "button": "Contact Us"
+    }
+  },
+  "getInvolved": {
+    "hero": {
+      "title": "Get Involved",
+      "subtitle": "Bali's restoration requires all of us. Find your place in this movement."
+    },
+    "pathways": {
+      "badge": "Your Path",
+      "title": "How You Can Contribute",
+      "options": [
+        {
+          "title": "Households",
+          "description": "Start separating waste at home and join your Banjar's program.",
+          "cta": "Learn More"
+        },
+        {
+          "title": "Villages",
+          "description": "Partner with us to bring comprehensive waste services to your community.",
+          "cta": "Partner With Us"
+        },
+        {
+          "title": "Businesses",
+          "description": "Integrate sustainable waste management into your operations.",
+          "cta": "Business Solutions"
+        },
+        {
+          "title": "Supporters",
+          "description": "Support the mission through advocacy, funding, or collaboration.",
+          "cta": "Get in Touch"
+        }
+      ]
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Receive updates on our progress, impact stories, and opportunities to contribute.",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Have questions or want to discuss a partnership? We'd love to hear from you.",
+      "form": {
+        "name": "Your Name",
+        "email": "Email Address",
+        "message": "Your Message",
+        "submit": "Send Message"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Restoring Bali's balance, together.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "email": "hello@elga.id",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2026 Elga. All rights reserved.",
+    "madeWith": "Made with love for Bali"
+  }
+}
