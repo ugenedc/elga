@@ -1,4 +1,7 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
 const nextConfig: NextConfig = {
   images: {
@@ -9,14 +12,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Prevent build failures on TypeScript errors (they're still shown as warnings)
+  // Prevent build failures on TypeScript errors
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Prevent build failures on ESLint errors
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

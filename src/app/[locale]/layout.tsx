@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import "../globals.css";
 
-// Static imports for messages
+// Static imports for metadata only
 import enMessages from '../../../messages/en.json';
 import idMessages from '../../../messages/id.json';
 
-const messages: Record<string, typeof enMessages> = {
+const messagesMap: Record<string, typeof enMessages> = {
   en: enMessages,
   id: idMessages,
 };
@@ -33,13 +34,20 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#F5F0E8' },
+    { media: '(prefers-color-scheme: dark)', color: '#1A1A1A' },
+  ],
+};
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const localeMessages = messages[locale] || messages['en'];
+  const localeMessages = messagesMap[locale] || messagesMap['en'];
   const metadata = localeMessages.metadata;
   
   return {
@@ -81,10 +89,6 @@ export async function generateMetadata({
       description: metadata.description,
       images: ['/images/generated/hero-bali-coast.png'],
     },
-    themeColor: [
-      { media: '(prefers-color-scheme: light)', color: '#F5F0E8' },
-      { media: '(prefers-color-scheme: dark)', color: '#1A1A1A' },
-    ],
     appleWebApp: {
       capable: true,
       statusBarStyle: 'black-translucent',
@@ -106,14 +110,14 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  const localeMessages = messages[locale] || messages['en'];
+  const messages = await getMessages();
 
   return (
     <html lang={locale} className="scroll-smooth overflow-x-hidden">
       <body
         className={`${cormorant.variable} ${plusJakarta.variable} antialiased min-h-screen w-full overflow-x-hidden`}
       >
-        <NextIntlClientProvider messages={localeMessages} locale={locale}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           {children}
         </NextIntlClientProvider>
       </body>
