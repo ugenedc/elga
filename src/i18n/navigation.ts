@@ -1,12 +1,23 @@
-import { createNavigation } from 'next-intl/navigation';
-import { defineRouting } from 'next-intl/routing';
+'use client';
 
-// Use defineRouting only for navigation (client-side)
-const routing = defineRouting({
-  locales: ['en', 'id'],
-  defaultLocale: 'en',
-  localePrefix: 'as-needed'
-});
+import NextLink from 'next/link';
+import { usePathname as useNextPathname, useRouter as useNextRouter } from 'next/navigation';
 
-export const { Link, redirect, usePathname, useRouter, getPathname } =
-  createNavigation(routing);
+// Simple Link component that uses locale from pathname
+export const Link = NextLink;
+
+// Re-export Next.js hooks
+export const usePathname = useNextPathname;
+export const useRouter = useNextRouter;
+
+// Helper to get pathname without locale
+export function getPathname(href: string) {
+  return href;
+}
+
+// Helper to redirect (just use router.push)
+export function redirect(href: string) {
+  if (typeof window !== 'undefined') {
+    window.location.href = href;
+  }
+}

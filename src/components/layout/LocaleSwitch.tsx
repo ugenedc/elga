@@ -1,16 +1,21 @@
 'use client';
 
-import { useLocale } from 'next-intl';
-import { usePathname, useRouter } from '@/i18n/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
 export default function LocaleSwitch() {
-  const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
+  const router = useRouter();
+  
+  // Extract locale from pathname (e.g., /en/about -> 'en')
+  const locale = pathname.split('/')[1] || 'en';
 
   const switchLocale = (newLocale: 'en' | 'id') => {
-    router.replace(pathname, { locale: newLocale });
+    // Replace the locale in the pathname
+    const segments = pathname.split('/');
+    segments[1] = newLocale;
+    const newPath = segments.join('/') || `/${newLocale}`;
+    router.push(newPath);
   };
 
   return (
