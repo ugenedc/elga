@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
+import { motion, Variant } from 'framer-motion';
 import { ReactNode } from 'react';
 
 interface SectionRevealProps {
@@ -10,7 +10,7 @@ interface SectionRevealProps {
   direction?: 'up' | 'down' | 'left' | 'right';
 }
 
-const directionVariants: Record<string, { hidden: object; visible: object }> = {
+const directionVariants = {
   up: {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 },
@@ -27,7 +27,7 @@ const directionVariants: Record<string, { hidden: object; visible: object }> = {
     hidden: { opacity: 0, x: -40 },
     visible: { opacity: 1, x: 0 },
   },
-};
+} as const;
 
 export default function SectionReveal({
   children,
@@ -35,7 +35,7 @@ export default function SectionReveal({
   delay = 0,
   direction = 'up',
 }: SectionRevealProps) {
-  const variants: Variants = {
+  const variants: { hidden: Variant; visible: Variant } = {
     hidden: directionVariants[direction].hidden,
     visible: {
       ...directionVariants[direction].visible,

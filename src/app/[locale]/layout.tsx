@@ -39,13 +39,47 @@ export async function generateMetadata({
       template: `%s | Elga`,
     },
     description: metadata.description,
-    keywords: ['Bali', 'waste management', 'sustainability', 'circular economy', 'environmental restoration'],
+    keywords: ['Bali', 'waste management', 'sustainability', 'circular economy', 'environmental restoration', 'Balinese', 'eco-friendly'],
     authors: [{ name: 'Elga' }],
+    manifest: '/manifest.json',
+    icons: {
+      icon: [
+        { url: '/favicon.svg', type: 'image/svg+xml' },
+        { url: '/icon.svg', type: 'image/svg+xml', sizes: 'any' },
+      ],
+      apple: [
+        { url: '/apple-icon.svg', type: 'image/svg+xml' },
+      ],
+    },
     openGraph: {
       title: metadata.title,
       description: metadata.description,
       locale: locale === 'id' ? 'id_ID' : 'en_US',
       type: 'website',
+      siteName: 'Elga',
+      images: [
+        {
+          url: '/images/generated/hero-bali-coast.png',
+          width: 1536,
+          height: 1024,
+          alt: 'Elga - Restoring Balance Together',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: metadata.title,
+      description: metadata.description,
+      images: ['/images/generated/hero-bali-coast.png'],
+    },
+    themeColor: [
+      { media: '(prefers-color-scheme: light)', color: '#F5F0E8' },
+      { media: '(prefers-color-scheme: dark)', color: '#1A1A1A' },
+    ],
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: 'black-translucent',
+      title: 'Elga',
     },
   };
 }
