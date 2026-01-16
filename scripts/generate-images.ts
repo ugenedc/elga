@@ -143,7 +143,8 @@ async function generateImage(imagePrompt: ImagePrompt): Promise<void> {
       quality: "high"
     });
 
-    const imageUrl = response.data[0]?.url || response.data[0]?.b64_json;
+    const imageData = response.data?.[0];
+    const imageUrl = imageData?.url || imageData?.b64_json;
     
     if (imageUrl) {
       if (imageUrl.startsWith('http')) {
