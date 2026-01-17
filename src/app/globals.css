@@ -200,6 +200,16 @@ h1, h2, h3, h4, h5, h6 {
   );
 }
 
+/* Radial vignette gradient */
+.bg-gradient-radial {
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    transparent 50%,
+    rgba(26, 26, 26, 0.3) 100%
+  );
+}
+
 /* Glass Effect */
 .glass {
   background: rgba(255, 255, 255, 0.1);

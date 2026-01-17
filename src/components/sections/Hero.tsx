@@ -39,8 +39,8 @@ export default function Hero({
   };
 
   const overlays = {
-    dark: 'bg-volcanic-black/60',
-    gradient: 'bg-gradient-to-b from-volcanic-black/80 via-volcanic-black/40 to-volcanic-black/80',
+    dark: 'bg-volcanic-black/40',
+    gradient: '', // Using custom vibrant overlay instead
     none: '',
   };
 
@@ -63,8 +63,22 @@ export default function Hero({
         </motion.div>
       )}
 
-      {/* Overlay */}
-      {overlay !== 'none' && (
+      {/* Overlay - Vibrant teal gradient with multiply blend */}
+      {overlay === 'gradient' && (
+        <>
+          {/* Deep teal multiply layer for richness */}
+          <div 
+            className="absolute inset-0 bg-gradient-to-b from-[#1a3a3a]/30 via-transparent to-[#1a3a3a]/40"
+            style={{ mixBlendMode: 'multiply' }}
+          />
+          {/* Soft vignette for text contrast - very subtle */}
+          <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-volcanic-black/30" />
+          {/* Top and bottom text safety gradients */}
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-volcanic-black/40 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-volcanic-black/40 to-transparent" />
+        </>
+      )}
+      {overlay === 'dark' && (
         <div className={`absolute inset-0 ${overlays[overlay]}`} />
       )}
 
@@ -88,7 +102,7 @@ export default function Hero({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl
-            text-rice-cream mb-6 max-w-5xl mx-auto leading-[1.1]"
+            text-rice-cream mb-6 max-w-5xl mx-auto leading-[1.1] drop-shadow-[0_2px_10px_rgba(0,0,0,0.4)]"
         >
           {title}
         </motion.h1>
@@ -98,7 +112,7 @@ export default function Hero({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lg md:text-xl text-rice-cream/70 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-rice-cream/90 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]"
           >
             {subtitle}
           </motion.p>
