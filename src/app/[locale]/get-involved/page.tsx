@@ -207,15 +207,26 @@ export default function GetInvolvedPage() {
               </div>
             </SectionReveal>
 
-            {/* Contact Form */}
+            {/* Contact Form - Uses Web3Forms to send to leon@leonhayes.com */}
             <SectionReveal delay={0.2}>
-              <form className="bg-rice-white border border-sand-light p-8 space-y-6">
+              <form 
+                action="https://api.web3forms.com/submit" 
+                method="POST"
+                className="bg-rice-white border border-sand-light p-8 space-y-6"
+              >
+                {/* Get your access key at https://web3forms.com - it's free! */}
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                <input type="hidden" name="subject" value="New Elga Contact Form Submission" />
+                <input type="hidden" name="from_name" value="Elga Website" />
+                <input type="hidden" name="redirect" value="https://elga-blush.vercel.app/en/get-involved?success=true" />
                 <div>
                   <label className="block text-sm font-medium text-volcanic-black mb-2">
                     {t('contact.form.name')}
                   </label>
                   <input
                     type="text"
+                    name="name"
+                    required
                     className="input"
                     placeholder="Your name"
                   />
@@ -226,6 +237,8 @@ export default function GetInvolvedPage() {
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    required
                     className="input"
                     placeholder="your@email.com"
                   />
@@ -234,7 +247,7 @@ export default function GetInvolvedPage() {
                   <label className="block text-sm font-medium text-volcanic-black mb-2">
                     I am a...
                   </label>
-                  <select className="input">
+                  <select name="type" className="input">
                     <option value="">Select...</option>
                     <option value="household">Household</option>
                     <option value="banjar">Banjar / Village Representative</option>
@@ -248,6 +261,8 @@ export default function GetInvolvedPage() {
                     {t('contact.form.message')}
                   </label>
                   <textarea
+                    name="message"
+                    required
                     className="input min-h-[150px]"
                     placeholder="How can we help you?"
                   />
