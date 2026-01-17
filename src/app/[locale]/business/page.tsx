@@ -28,7 +28,7 @@ export default function BusinessPage() {
       <Hero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
-        image="/images/generated/hero-rice-terraces.jpg"
+        image="/images/generated/hero-business.jpg"
         height="large"
       >
         <Button href="#contact" variant="primary" size="lg">
