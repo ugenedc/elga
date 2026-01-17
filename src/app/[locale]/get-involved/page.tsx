@@ -215,7 +215,7 @@ export default function GetInvolvedPage() {
                 className="bg-rice-white border border-sand-light p-8 space-y-6"
               >
                 {/* Get your access key at https://web3forms.com - it's free! */}
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                <input type="hidden" name="access_key" value="36e0b181-0e83-477d-89ed-51e4128f7dee" />
                 <input type="hidden" name="subject" value="New Elga Contact Form Submission" />
                 <input type="hidden" name="from_name" value="Elga Website" />
                 <input type="hidden" name="redirect" value="https://elga-blush.vercel.app/en/get-involved?success=true" />
