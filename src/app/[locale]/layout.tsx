@@ -1,11 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { TranslationProvider } from '@/lib/translations';
 import "../globals.css";
 
-// Static imports for metadata only
 import enMessages from '../../../messages/en.json';
 import idMessages from '../../../messages/id.json';
 
@@ -56,13 +54,12 @@ export async function generateMetadata({
       template: `%s | Elga`,
     },
     description: metadata.description,
-    keywords: ['Bali', 'waste management', 'sustainability', 'circular economy', 'environmental restoration', 'Balinese', 'eco-friendly'],
+    keywords: ['Bali', 'waste management', 'sustainability', 'circular economy', 'environmental restoration'],
     authors: [{ name: 'Elga' }],
     manifest: '/manifest.json',
     icons: {
       icon: [
         { url: '/favicon.svg', type: 'image/svg+xml' },
-        { url: '/icon.svg', type: 'image/svg+xml', sizes: 'any' },
       ],
       apple: [
         { url: '/apple-icon.svg', type: 'image/svg+xml' },
@@ -74,25 +71,6 @@ export async function generateMetadata({
       locale: locale === 'id' ? 'id_ID' : 'en_US',
       type: 'website',
       siteName: 'Elga',
-      images: [
-        {
-          url: '/images/generated/hero-bali-coast.png',
-          width: 1536,
-          height: 1024,
-          alt: 'Elga - Restoring Balance Together',
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: metadata.title,
-      description: metadata.description,
-      images: ['/images/generated/hero-bali-coast.png'],
-    },
-    appleWebApp: {
-      capable: true,
-      statusBarStyle: 'black-translucent',
-      title: 'Elga',
     },
   };
 }
@@ -110,16 +88,14 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  const messages = await getMessages();
-
   return (
     <html lang={locale} className="scroll-smooth overflow-x-hidden">
       <body
         className={`${cormorant.variable} ${plusJakarta.variable} antialiased min-h-screen w-full overflow-x-hidden`}
       >
-        <NextIntlClientProvider messages={messages} locale={locale}>
+        <TranslationProvider locale={locale}>
           {children}
-        </NextIntlClientProvider>
+        </TranslationProvider>
       </body>
     </html>
   );

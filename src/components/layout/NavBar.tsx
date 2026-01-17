@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslations } from 'next-intl';
-import { Link, usePathname } from '@/i18n/navigation';
+import { useTranslations } from '@/lib/translations';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import LocaleSwitch from './LocaleSwitch';
 
 export default function NavBar() {

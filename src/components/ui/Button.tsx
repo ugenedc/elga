@@ -2,7 +2,7 @@
 
 import { motion, HTMLMotionProps } from 'framer-motion';
 import { forwardRef } from 'react';
-import { Link } from '@/i18n/navigation';
+import Link from 'next/link';
 
 interface ButtonProps extends Omit<HTMLMotionProps<'button'>, 'ref'> {
   variant?: 'primary' | 'secondary' | 'ghost';
