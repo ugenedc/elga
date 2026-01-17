@@ -30,7 +30,7 @@ export default function CommunityPage() {
       <Hero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
-        image="/images/generated/community-gathering.png"
+        image="/images/generated/community-gathering.jpg"
         height="large"
       />
 
@@ -67,7 +67,7 @@ export default function CommunityPage() {
             <SectionReveal delay={0.2} direction="left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/generated/banjar-meeting.png"
+                  src="/images/generated/banjar-meeting.jpg"
                   alt="Banjar meeting"
                   fill
                   className="object-cover"
@@ -123,7 +123,7 @@ export default function CommunityPage() {
             <SectionReveal direction="right" className="order-2 lg:order-1">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/generated/collection-team.png"
+                  src="/images/generated/collection-team.jpg"
                   alt="Collection team"
                   fill
                   className="object-cover"

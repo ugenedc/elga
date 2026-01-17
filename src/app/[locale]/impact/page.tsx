@@ -31,7 +31,7 @@ export default function ImpactPage() {
       <Hero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
-        image="/images/generated/clean-beach-sunset.png"
+        image="/images/generated/clean-beach-sunset.jpg"
         height="large"
       />
 
@@ -131,7 +131,7 @@ export default function ImpactPage() {
               <div className="relative">
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <Image
-                    src="/images/generated/restored-river.png"
+                    src="/images/generated/restored-river.jpg"
                     alt="Restored river"
                     fill
                     className="object-cover"
@@ -153,7 +153,7 @@ export default function ImpactPage() {
               <div className="relative">
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <Image
-                    src="/images/generated/children-nature.png"
+                    src="/images/generated/children-nature.jpg"
                     alt="Children in nature"
                     fill
                     className="object-cover"
@@ -175,7 +175,7 @@ export default function ImpactPage() {
               <div className="relative">
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <Image
-                    src="/images/generated/composting-garden.png"
+                    src="/images/generated/composting-garden.jpg"
                     alt="Composting garden"
                     fill
                     className="object-cover"
@@ -197,7 +197,7 @@ export default function ImpactPage() {
               <div className="relative">
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <Image
-                    src="/images/generated/collection-team.png"
+                    src="/images/generated/collection-team.jpg"
                     alt="Collection team"
                     fill
                     className="object-cover"
@@ -246,7 +246,7 @@ export default function ImpactPage() {
             <SectionReveal delay={0.2} direction="left">
               <div className="relative aspect-square overflow-hidden">
                 <Image
-                  src="/images/generated/sacred-water-temple.png"
+                  src="/images/generated/sacred-water-temple.jpg"
                   alt="Sacred water temple"
                   fill
                   className="object-cover"

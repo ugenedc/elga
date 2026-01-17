@@ -31,7 +31,7 @@ export default function ChallengePage() {
       <Hero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
-        image="/images/generated/restored-river.png"
+        image="/images/generated/restored-river.jpg"
         height="large"
       />
 
@@ -104,7 +104,7 @@ export default function ChallengePage() {
             <SectionReveal direction="right">
               <div className="relative aspect-[4/3] overflow-hidden order-2 lg:order-1">
                 <Image
-                  src="/images/generated/processing-facility.png"
+                  src="/images/generated/processing-facility.jpg"
                   alt="Processing facility"
                   fill
                   className="object-cover"
@@ -183,7 +183,7 @@ export default function ChallengePage() {
           label: t('cta.button'),
           href: `/${locale}/approach`,
         }}
-        backgroundImage="/images/generated/clean-beach-sunset.png"
+        backgroundImage="/images/generated/clean-beach-sunset.jpg"
       />
 
       <Footer />

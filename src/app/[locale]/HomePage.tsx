@@ -32,7 +32,7 @@ export default function HomePage() {
       <Hero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
-        image="/images/generated/hero-bali-coast.png"
+        image="/images/generated/hero-bali-coast.jpg"
         scrollIndicator
       >
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -86,7 +86,7 @@ export default function HomePage() {
             <SectionReveal delay={0.2} direction="left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/generated/temple-offerings.png"
+                  src="/images/generated/temple-offerings.jpg"
                   alt="Balinese offerings"
                   fill
                   className="object-cover"

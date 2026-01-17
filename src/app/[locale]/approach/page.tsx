@@ -30,7 +30,7 @@ export default function ApproachPage() {
       <Hero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
-        image="/images/generated/hero-rice-terraces.png"
+        image="/images/generated/hero-rice-terraces.jpg"
         height="large"
       />
 
@@ -101,7 +101,7 @@ export default function ApproachPage() {
             <SectionReveal delay={0.2} direction="left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/generated/collection-team.png"
+                  src="/images/generated/collection-team.jpg"
                   alt="Collection team"
                   fill
                   className="object-cover"
@@ -120,7 +120,7 @@ export default function ApproachPage() {
             <SectionReveal direction="right" className="order-2 lg:order-1">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/generated/processing-facility.png"
+                  src="/images/generated/processing-facility.jpg"
                   alt="Processing facility"
                   fill
                   className="object-cover"

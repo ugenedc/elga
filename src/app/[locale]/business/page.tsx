@@ -28,7 +28,7 @@ export default function BusinessPage() {
       <Hero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
-        image="/images/generated/hero-rice-terraces.png"
+        image="/images/generated/hero-rice-terraces.jpg"
         height="large"
       >
         <Button href="#contact" variant="primary" size="lg">
@@ -111,7 +111,7 @@ export default function BusinessPage() {
             <SectionReveal delay={0.2} direction="left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/generated/processing-facility.png"
+                  src="/images/generated/processing-facility.jpg"
                   alt="Processing facility"
                   fill
                   className="object-cover"

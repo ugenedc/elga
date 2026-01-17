@@ -26,7 +26,7 @@ export default function GetInvolvedPage() {
       <Hero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
-        image="/images/generated/children-nature.png"
+        image="/images/generated/children-nature.jpg"
         height="large"
       />
 
@@ -109,7 +109,7 @@ export default function GetInvolvedPage() {
             <SectionReveal delay={0.2} direction="left">
               <div className="relative aspect-square overflow-hidden">
                 <Image
-                  src="/images/generated/composting-garden.png"
+                  src="/images/generated/composting-garden.jpg"
                   alt="Composting garden"
                   fill
                   className="object-cover"
