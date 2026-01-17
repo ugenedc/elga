@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from '@/lib/translations';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
@@ -19,6 +20,8 @@ import {
 
 export default function ChallengePage() {
   const t = useTranslations('challenge');
+  const pathname = usePathname();
+  const locale = pathname.split('/')[1] || 'en';
 
   return (
     <main className="bg-rice-cream">
@@ -178,7 +181,7 @@ export default function ChallengePage() {
         description={t('cta.description')}
         primaryCTA={{
           label: t('cta.button'),
-          href: '/approach',
+          href: `/${locale}/approach`,
         }}
         backgroundImage="/images/generated/clean-beach-sunset.png"
       />

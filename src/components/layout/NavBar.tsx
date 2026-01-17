@@ -12,6 +12,9 @@ export default function NavBar() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  // Extract locale from pathname
+  const locale = pathname.split('/')[1] || 'en';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,13 +29,13 @@ export default function NavBar() {
   }, [pathname]);
 
   const navLinks = [
-    { href: '/', label: t('home') },
-    { href: '/challenge', label: t('challenge') },
-    { href: '/approach', label: t('approach') },
-    { href: '/impact', label: t('impact') },
-    { href: '/community', label: t('community') },
-    { href: '/business', label: t('business') },
-    { href: '/get-involved', label: t('getInvolved') },
+    { href: `/${locale}`, label: t('home') },
+    { href: `/${locale}/challenge`, label: t('challenge') },
+    { href: `/${locale}/approach`, label: t('approach') },
+    { href: `/${locale}/impact`, label: t('impact') },
+    { href: `/${locale}/community`, label: t('community') },
+    { href: `/${locale}/business`, label: t('business') },
+    { href: `/${locale}/get-involved`, label: t('getInvolved') },
   ];
 
   return (
@@ -52,7 +55,7 @@ export default function NavBar() {
         <nav className="container-elga">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="relative z-10">
+            <Link href={`/${locale}`} className="relative z-10">
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 className="flex items-center gap-3"

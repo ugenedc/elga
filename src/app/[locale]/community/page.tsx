@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from '@/lib/translations';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
@@ -18,6 +19,8 @@ import {
 
 export default function CommunityPage() {
   const t = useTranslations('community');
+  const pathname = usePathname();
+  const locale = pathname.split('/')[1] || 'en';
 
   return (
     <main className="bg-rice-cream">
@@ -223,11 +226,11 @@ export default function CommunityPage() {
         description="Whether you're a household, Banjar, or village, we're ready to partner with you."
         primaryCTA={{
           label: 'Get Involved',
-          href: '/get-involved',
+          href: `/${locale}/get-involved`,
         }}
         secondaryCTA={{
           label: 'Contact Us',
-          href: '/get-involved#contact',
+          href: `/${locale}/get-involved#contact`,
         }}
         variant="pattern"
       />

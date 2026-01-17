@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from '@/lib/translations';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
@@ -20,6 +21,8 @@ import {
 
 export default function HomePage() {
   const t = useTranslations('home');
+  const pathname = usePathname();
+  const locale = pathname.split('/')[1] || 'en';
 
   return (
     <main className="bg-rice-cream w-full min-w-full overflow-x-hidden">
@@ -33,7 +36,7 @@ export default function HomePage() {
         scrollIndicator
       >
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="/get-involved" variant="primary" size="lg">
+          <Button href={`/${locale}/get-involved`} variant="primary" size="lg">
             {t('hero.cta')}
           </Button>
         </div>
@@ -216,11 +219,11 @@ export default function HomePage() {
         description={t('cta.description')}
         primaryCTA={{
           label: t('cta.primary'),
-          href: '/get-involved',
+          href: `/${locale}/get-involved`,
         }}
         secondaryCTA={{
           label: t('cta.secondary'),
-          href: '/approach',
+          href: `/${locale}/approach`,
         }}
         variant="pattern"
       />

@@ -2,21 +2,26 @@
 
 import { useTranslations } from '@/lib/translations';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import SectionReveal from '../animations/SectionReveal';
 
 export default function Footer() {
   const t = useTranslations('footer');
   const nav = useTranslations('nav');
+  const pathname = usePathname();
+  
+  // Extract locale from pathname
+  const locale = pathname.split('/')[1] || 'en';
 
   const navLinks = [
-    { href: '/', label: nav('home') },
-    { href: '/challenge', label: nav('challenge') },
-    { href: '/approach', label: nav('approach') },
-    { href: '/impact', label: nav('impact') },
-    { href: '/community', label: nav('community') },
-    { href: '/business', label: nav('business') },
-    { href: '/get-involved', label: nav('getInvolved') },
+    { href: `/${locale}`, label: nav('home') },
+    { href: `/${locale}/challenge`, label: nav('challenge') },
+    { href: `/${locale}/approach`, label: nav('approach') },
+    { href: `/${locale}/impact`, label: nav('impact') },
+    { href: `/${locale}/community`, label: nav('community') },
+    { href: `/${locale}/business`, label: nav('business') },
+    { href: `/${locale}/get-involved`, label: nav('getInvolved') },
   ];
 
   return (

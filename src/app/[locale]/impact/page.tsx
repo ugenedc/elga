@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from '@/lib/translations';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
@@ -19,6 +20,8 @@ import {
 export default function ImpactPage() {
   const t = useTranslations('impact');
   const homeT = useTranslations('home');
+  const pathname = usePathname();
+  const locale = pathname.split('/')[1] || 'en';
 
   return (
     <main className="bg-rice-cream">
@@ -261,11 +264,11 @@ export default function ImpactPage() {
         description="Every contribution matters. Find your place in this movement."
         primaryCTA={{
           label: 'Get Involved',
-          href: '/get-involved',
+          href: `/${locale}/get-involved`,
         }}
         secondaryCTA={{
           label: 'Partner With Us',
-          href: '/business',
+          href: `/${locale}/business`,
         }}
         variant="pattern"
       />

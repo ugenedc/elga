@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from '@/lib/translations';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
@@ -18,6 +19,8 @@ import {
 
 export default function ApproachPage() {
   const t = useTranslations('approach');
+  const pathname = usePathname();
+  const locale = pathname.split('/')[1] || 'en';
 
   return (
     <main className="bg-rice-cream">
@@ -226,11 +229,11 @@ export default function ApproachPage() {
         description="Discover how our approach is creating measurable change across Bali."
         primaryCTA={{
           label: 'View Our Impact',
-          href: '/impact',
+          href: `/${locale}/impact`,
         }}
         secondaryCTA={{
           label: 'Join the Movement',
-          href: '/get-involved',
+          href: `/${locale}/get-involved`,
         }}
         variant="pattern"
       />
