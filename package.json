@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@google/genai": "^1.37.0",
+    "@google/generative-ai": "^0.24.1",
     "framer-motion": "^12.26.2",
     "next": "16.1.2",
     "openai": "^6.16.0",
