@@ -102,7 +102,10 @@ export default function Hero({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl
-            text-rice-cream mb-6 max-w-5xl mx-auto leading-[1.1] drop-shadow-[0_2px_10px_rgba(0,0,0,0.4)]"
+            text-rice-cream mb-6 max-w-5xl mx-auto leading-[1.1]"
+          style={{ 
+            textShadow: '0 2px 8px rgba(0,0,0,0.7), 0 4px 20px rgba(0,0,0,0.5), 0 8px 40px rgba(0,0,0,0.4)' 
+          }}
         >
           {title}
         </motion.h1>
@@ -112,7 +115,10 @@ export default function Hero({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lg md:text-xl text-rice-cream/90 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]"
+            className="text-lg md:text-xl text-rice-cream max-w-2xl mx-auto leading-relaxed"
+            style={{ 
+              textShadow: '0 1px 4px rgba(0,0,0,0.8), 0 2px 12px rgba(0,0,0,0.6), 0 4px 24px rgba(0,0,0,0.4)' 
+            }}
           >
             {subtitle}
           </motion.p>
