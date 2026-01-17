@@ -64,8 +64,8 @@
       }
     },
     "impact": {
-      "badge": "Our Impact",
-      "title": "Measurable Restoration",
+      "badge": "Projected 2026 Goals",
+      "title": "Our Targets for 2026",
       "stats": {
         "diverted": {
           "value": "50,000",
@@ -235,9 +235,9 @@
       "subtitle": "Measured, verified, and transparently reported. Trust is earned through data and consistency."
     },
     "metrics": {
-      "badge": "What We Measure",
-      "title": "Real Numbers, Real Change",
-      "description": "Every tonne diverted, every plastic item recovered, every job created — we track it all."
+      "badge": "Projected 2026 Goals",
+      "title": "Our Targets for 2026",
+      "description": "These projections represent our ambitious goals as we scale operations across Bali."
     },
     "stories": {
       "badge": "Success Stories",
