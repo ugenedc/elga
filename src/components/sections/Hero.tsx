@@ -63,19 +63,18 @@ export default function Hero({
         </motion.div>
       )}
 
-      {/* Overlay - Vibrant teal gradient with multiply blend */}
+      {/* Overlay - Subtle colored multiply gradient */}
       {overlay === 'gradient' && (
         <>
-          {/* Deep teal multiply layer for richness */}
+          {/* Deep teal/forest multiply layer - adds richness without killing vibrancy */}
           <div 
-            className="absolute inset-0 bg-gradient-to-b from-[#1a3a3a]/30 via-transparent to-[#1a3a3a]/40"
+            className="absolute inset-0 bg-gradient-to-b from-[#1E4D5C]/25 via-[#2D5A3D]/15 to-[#1E4D5C]/30"
             style={{ mixBlendMode: 'multiply' }}
           />
-          {/* Soft vignette for text contrast - very subtle */}
-          <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-volcanic-black/30" />
-          {/* Top and bottom text safety gradients */}
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-volcanic-black/40 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-volcanic-black/40 to-transparent" />
+          {/* Very subtle center darkening for text readability */}
+          <div 
+            className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-transparent"
+          />
         </>
       )}
       {overlay === 'dark' && (
@@ -103,9 +102,6 @@ export default function Hero({
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl
             text-rice-cream mb-6 max-w-5xl mx-auto leading-[1.1]"
-          style={{ 
-            textShadow: '0 2px 8px rgba(0,0,0,0.7), 0 4px 20px rgba(0,0,0,0.5), 0 8px 40px rgba(0,0,0,0.4)' 
-          }}
         >
           {title}
         </motion.h1>
@@ -115,10 +111,7 @@ export default function Hero({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lg md:text-xl text-rice-cream max-w-2xl mx-auto leading-relaxed"
-            style={{ 
-              textShadow: '0 1px 4px rgba(0,0,0,0.8), 0 2px 12px rgba(0,0,0,0.6), 0 4px 24px rgba(0,0,0,0.4)' 
-            }}
+            className="text-lg md:text-xl text-rice-cream/90 max-w-2xl mx-auto leading-relaxed"
           >
             {subtitle}
           </motion.p>
